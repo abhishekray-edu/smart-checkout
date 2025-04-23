@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Smart Checkout</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1>🧮 Smart Checkout</h1>
+
+  <form id="checkout-form">
+    <label>Price: <input type="number" id="price" step="0.01" required /></label><br />
+    <label>Tax (%): <input type="number" id="tax" step="0.01" required /></label><br />
+    <label>Discount (%): <input type="number" id="discount" step="0.01" required /></label><br />
+    <label>Coupon ($): <input type="number" id="coupon" step="0.01" required /></label><br />
+    <button type="submit">Calculate</button>
+  </form>
+
+  <h2 id="result">Final Amount: —</h2>
+
+  <h3>🕒 Last 3 Calculations</h3>
+  <ul id="history"></ul>
+
+  <script src="script.js"></script>
+</body>
+</html>
