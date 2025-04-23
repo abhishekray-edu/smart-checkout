@@ -10,7 +10,7 @@ form.addEventListener('submit', async (e) => {
   const discount = parseFloat(document.getElementById('discount').value);
   const coupon = parseFloat(document.getElementById('coupon').value);
 
-  const response = await fetch('https://smart-checkout.onrender.com/api/calculate', {
+  const response = await fetch('/api/calculate', {
     method: 'POST',
     headers: { 'Content-Type': 'application/json' },
     body: JSON.stringify({ price, tax, discount, coupon })
